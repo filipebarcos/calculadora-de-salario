@@ -1,0 +1,24 @@
+-
+  aliquota: 0
+  limite_inferior: 0
+  limite_superior: 1710.78
+  dedutor: 0
+-
+  aliquota: 7.5
+  limite_inferior: 1710.79
+  limite_superior: 2563.91
+  dedutor: 128.31
+-
+  aliquota: 15
+  limite_inferior: 2563.92
+  limite_superior: 3418.59
+  dedutor: 320.60
+-
+  aliquota: 22.5
+  limite_inferior: 3418.60
+  limite_superior: 4271.59
+  dedutor: 577.00
+-
+  aliquota: 27.5
+  limite_inferior: 4271.59
+  dedutor: 790.58
