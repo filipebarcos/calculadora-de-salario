@@ -11,6 +11,10 @@ task :calcula, :salario, :inss, :descontos, :ano do |t, args|
                                 :aliquota_inss => args[:inss].to_f,
                                 :outros_descontos => args[:descontos].to_f,
                                 :ano              => args[:ano])
-                                
-  puts calculadora.executa
+  puts calculadora.executa.round(2)
+end
+
+
+def entradas_validas?(args)
+  args.length == 4 && !args[:salario_bruto].nil? && !args[:inss].nil? && !args[:descontos].nil? && !args[:ano].nil?
 end

@@ -3,7 +3,8 @@ require 'yaml'
 class TabelaProgressiva
   attr_reader :tabela
 
-  def initialize(ano, tabela = [])
+  def initialize(opts = {})
+    tabela = opts[:tabela]
     if tabela.empty?
       @tabela = YAML.load_file("./resources/#{ano}.yaml")
     else

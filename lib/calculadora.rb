@@ -11,11 +11,11 @@ class Calculadora
     valor_base - @outros_descontos - (irrf(valor_base) || 0)
   end
 
-  private
-  def calcula_base_irrf
-    @salario_bruto * (100.0 - @aliquota_inss.to_f) / 100.0
+  def salario_base
+    @salario_base ||= @salario_bruto * (100.0 - @aliquota_inss.to_f) / 100.0
   end
 
+  private
   def porcentagem(valor)
     valor.to_f / 100.0
   end
