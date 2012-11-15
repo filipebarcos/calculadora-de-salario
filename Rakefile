@@ -1,8 +1,9 @@
 require 'rspec/core/rake_task'
 require './lib/calculadora'
 require './lib/tabela_progressiva'
-RSpec::Core::RakeTask.new(:spec)
+require './lib/common/hash'
 
+RSpec::Core::RakeTask.new(:spec)
 task :default => :spec
 
 
